@@ -1,0 +1,149 @@
+% ---
+% Title: Resume
+% Author: Weston Odend'hal
+% Date: 2020-08-06
+% ---
+
+\documentclass{article}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+
+% Package settings
+\pagenumbering{gobble}
+\titleformat{\section}{\raggedright\bf}{}{0em}{}[\titlerule]
+\geometry{
+  letterpaper,
+  left=0.5in,
+  right=0.5in,
+  top=0.5in,
+  bottom=0.5in
+}
+
+% Custom commands
+\renewcommand{\familydefault}{phv}
+\newcommand{\beginResumeList}{\begin{itemize}\setlength\itemsep{0em}\begin{minipage}{0.9\textwidth}}
+\newcommand{\resumeListEnd}{\end{minipage}\end{itemize}}
+\newcommand{\boldItem}[2]{\normalsize\item{\textbf{#1}{: #2}}}
+\newcommand{\normalItem}[1]{\normalsize\item{#1}}
+\newcommand{\experience}[2]{
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \normalsize\textbf{#1} & \normalsize #2 \\
+  \end{tabular*}
+}
+\newcommand{\education}[3]{
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \normalsize\textbf{#1, }\textit{#2} & \normalsize #3 \\
+  \end{tabular*}
+}
+\newcommand{\social}[3]{
+  \begin{tabular*}{0.95\textwidth}[t]{l@{\extracolsep{\fill}} c@{\extracolsep{\fill}} r}
+    \normalsize{#1} & \normalsize{#2} & \normalsize{#3}
+  \end{tabular*}
+}
+\newcommand{\project}[3]{
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \normalsize\textbf{#1} & \normalsize #2 \\
+    \normalsize\textit{#3}
+  \end{tabular*}
+}
+
+\begin{document}
+  \centering\huge\textbf{Weston Odend'hal}
+  \vspace*{0.1in}
+
+  \normalsize \textbf{+1-415-672-7969 | \href{mailto:wodend@tuta.io}{wodend@tuta.io}}
+  \vspace*{0.25in}
+
+  \social
+    {\textbf{GitHub:} \href{https://github.com/wodend/}{github.com/wodend}}
+    {\textbf{LinkedIn:} \href{https://www.linkedin.com/in/wodend/}{linkedin.com/in/wodend}}
+    {\textbf{AngelList:} \href{https://angel.co/u/wodend}{angel.co/u/wodend}}
+
+  \section{TECHNICAL SKILLS}
+  \beginResumeList
+  \boldItem{Proficient}{Python, NumPy, SciPy, Pandas, multiprocessing, Matplotlib, OpenCV, requests, statsmodels, BeautifulSoup, Jupyter Notebook/Lab, R, Plotly, C/C++, Bash, Linux, Git, GitLab CI/CD, Docker, DigitalOcean, Java, Maven, Tablesaw, Jakarta EE, Selenium, Pandoc, \LaTeX, HTML, SQL, LDAP, PowerShell}
+  \boldItem{Exposure}{Django, bqplot, C\#, .NET, Racket, CSS, Gradle, LXD, Scala, Lua, Javascript/Typescript, SAS}
+  \resumeListEnd
+
+  \section{WORK EXPERIENCE}
+  \experience
+    {Deloitte | Data Engineer | San Francisco, CA}
+    {Jul. 2019 - Jul. 2020}
+    \beginResumeList
+      \normalItem{Created data pipeline to aggregate and clean user login data across a distributed environment with PowerShell scripts and LDAP database queries, saving about an hour of manual work gathering this data each week.}
+      \normalItem{Automated analysis of user login data with a Java program using the Tablesaw library to generate daily and weekly login statistics, saving another hour of manual analysis each week.}
+      \normalItem{Introduced a new process to generate security scan crawls using Selenium, saving 120 hours/month.}
+      \normalItem{Generated sanitized test data using IBM Optim to obfuscate Personally Identifying and Protected Health information from the production SQL Server database with close to half a million users.}
+    \resumeListEnd
+
+  \experience
+    {Cal Poly | Teaching Assistant | San Luis Obispo, CA}
+    {Sep. 2018 - Jun. 2019}
+    \beginResumeList
+      \normalItem{Led office hours for a new class, helping students work through statistics and machine learning assignments using Pandas, NumPy, statsmodels, and SciKit-Learn for over 60 students.}
+      %\normalItem{Took questions in class on general programming concepts such as data structures, web scraping, computational complexity, and regular expressions.}
+      \normalItem{Troubleshoot environment installation issues including Python dependency problems, and explain solutions to students.}
+    \resumeListEnd
+
+  \experience
+    {Cal Poly | Data Engineer (Research) | San Luis Obispo, CA}
+    {Jun. 2017 - Jun. 2018}
+    \beginResumeList
+      \normalItem{Cleaned and curated SAS datasets downloaded from the Panel Study of Income Dynamics, allowing researchers to access data in novel ways.}
+      \normalItem{Automated determination of optimal office hours for professors with a tool written in R using matrix algebra, saving about an hour of work for each professor every quarter.}
+      \normalItem{Created a custom PDF scraping tool to facilitate research in C using the Poppler library, allowing us to include new factors in our regression for a more accurate prediction.}
+    \resumeListEnd
+
+\section{EDUCATION}
+  \education
+    {B.S. Economics; Minor Computer Science}
+    {California Polytechnic State University}
+    {Jun. 2019}
+
+\section{PROJECT WORK}
+  \project
+    {Home Lab | \href{https://github.com/wodend/cloudflare-ddns}{github.com/wodend/cloudflare-ddns}}
+    {2020}
+    {Host infrastructure for personal projects, and learning new technologies.}
+    \beginResumeList
+      \normalItem{Host dockerized personal GitLab source control and GitLab pages behind HAProxy load balancer.}
+      \normalItem{Automatically renew LetsEncrypt certificates with DNS verification challenge using Cloudflare's API.}
+      \normalItem{Generate static HTML pages with MathJax for LaTeX using Pandoc Markdown.}
+      \normalItem{Manage subnet with DDWRT router using dnsmasq for local DNS, and DNS filtering.}
+      \normalItem{Operate physical Debian and Gentoo Linux infrastructure for hosting dockerized applications.}
+    \resumeListEnd
+
+  \project
+    {Pricing Differentials by Location | Research Assistant | \href{https://github.com/wodend/hotel-scraper}{github.com/wodend/hotel-scraper}}
+    {2019}
+    {Model for pricing differentials by location for online travel sites with global data scraped using cloud resources.}
+    \beginResumeList
+      \normalItem{Created scraping tools for various travel websites using Beautiful Soup in Python to get price data.}
+      \normalItem{Scheduled multi-threaded execution of scraping at specified intervals with shell scripts deployed on DigitalOcean droplets.}
+      \normalItem{Created linear models based on pricing for each region, and used ANOVA analysis to determine statistical significance of differences in pricing based on region.}
+    \resumeListEnd
+
+  %\project
+  %  {CPF2CSV | Research Assistant | \href{https://github.com/wodend/cpf2csv}{github.com/wodend/cpf2csv}}
+  %  {2018}
+  %  {Converts unstructured PDF degree flowchart data from Cal Poly to machine-readable CSV.}
+  %  \beginResumeList
+  %    \normalItem{Cropped degree flowcharts into regions for each of the quarters listed with the Poppler PDF library.}
+  %    \normalItem{Generated .csv output containing the list of requirements for each quarter listed on the degree flowchart.}
+  %    \normalItem{Output from the program used in research on the efficiency of class scheduling and assignment at a public university.}
+  %  \resumeListEnd
+
+%\section{LEADERSHIP + AWARDS}
+%  \education
+%    {Treasurer}
+%    {Cal Poly Economics Society}
+%    {Jun. 2019}
+%  \education
+%    {Eagle Scout}
+%    {Boy Scouts of America}
+%    {Jun. 2015}
+
+\end{document}
