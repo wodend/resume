@@ -36,7 +36,7 @@
 \newcommand{\education}[3]{
   \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \normalsize\textbf{#1, }\textit{#2} & \normalsize #3 \\
-  \end{tabular*}
+  \end{tabular*}\vspace{-5pt}
 }
 \newcommand{\social}[3]{
   \begin{tabular*}{0.95\textwidth}[t]{l@{\extracolsep{\fill}} c@{\extracolsep{\fill}} r}
@@ -54,8 +54,8 @@
   \centering\huge\textbf{Weston Odend'hal}
   \vspace*{0.1in}
 
-  \normalsize \textbf{+1-415-672-7969 | \href{mailto:wodend@tuta.io}{wodend@tuta.io}}
-  \vspace*{0.25in}
+  \normalsize \textbf{+1-415-672-7969 | \href{mailto:wodend@tuta.io}{wodend@tuta.io} | San Francisco}
+  \vspace*{0.1in}
 
   \social
     {\textbf{GitHub:} \href{https://github.com/wodend/}{github.com/wodend}}
@@ -64,6 +64,7 @@
 
   \section{TECHNICAL SKILLS}
   \beginResumeList
+  %\boldItem{Proficient}{Python, NumPy, SciPy, Pandas, multiprocessing, Matplotlib, OpenCV, requests, statsmodels, BeautifulSoup, Jupyter Notebook/Lab, R, Plotly, C/C++, Bash, Linux, Git, GitLab CI/CD, Docker, DigitalOcean, Java, Maven, Tablesaw, Jakarta EE, Selenium, Pandoc, \LaTeX, HTML, SQL, LDAP, PowerShell}
   \boldItem{Proficient}{Python, NumPy, SciPy, Pandas, multiprocessing, Matplotlib, OpenCV, requests, statsmodels, BeautifulSoup, Jupyter Notebook/Lab, R, Plotly, C/C++, Bash, Linux, Git, GitLab CI/CD, Docker, DigitalOcean, Java, Maven, Tablesaw, Jakarta EE, Selenium, Pandoc, \LaTeX, HTML, SQL, LDAP, PowerShell}
   \boldItem{Exposure}{Django, bqplot, C\#, .NET, Racket, CSS, Gradle, LXD, Scala, Lua, Javascript/Typescript, SAS}
   \resumeListEnd
@@ -73,28 +74,28 @@
     {Deloitte | Data Engineer | San Francisco, CA}
     {Jul. 2019 - Jul. 2020}
     \beginResumeList
-      \normalItem{Created data pipeline to aggregate and clean user login data across a distributed environment with PowerShell scripts and LDAP database queries, saving about an hour of manual work gathering this data each week.}
-      \normalItem{Automated analysis of user login data with a Java program using the Tablesaw library to generate daily and weekly login statistics, saving another hour of manual analysis each week.}
-      \normalItem{Introduced a new process to generate security scan crawls using Selenium, saving 120 hours/month.}
-      \normalItem{Generated sanitized test data using IBM Optim to obfuscate Personally Identifying and Protected Health information from the production SQL Server database with close to half a million users.}
+      \normalItem{Created data pipeline to aggregate and clean user login data across a distributed environment with PowerShell scripts and LDAP database queries, reducing time spent 50\% and including previously unavailable data.}
+      \normalItem{Automated analysis of user login data with a Java program using the Tablesaw library to generate daily and weekly login statistics, reducing time spent by 90\%.}
+      \normalItem{Introduced a new process to generate security scan crawls using Selenium, saving the client \$12,000 per month.}
+      \normalItem{Generated sanitized test data using IBM Optim to obfuscate Personally Identifying and Protected Health information from the production SQL Server database with over 100,000,000 records for 450,000+ users.}
     \resumeListEnd
 
   \experience
-    {Cal Poly | Teaching Assistant | San Luis Obispo, CA}
+    {Cal Poly | Teaching Assistant (Computer Science) | San Luis Obispo, CA}
     {Sep. 2018 - Jun. 2019}
     \beginResumeList
       \normalItem{Led office hours for a new class, helping students work through statistics and machine learning assignments using Pandas, NumPy, statsmodels, and SciKit-Learn for over 60 students.}
       %\normalItem{Took questions in class on general programming concepts such as data structures, web scraping, computational complexity, and regular expressions.}
-      \normalItem{Troubleshoot environment installation issues including Python dependency problems, and explain solutions to students.}
+      \normalItem{Troubleshoot issues including Python dependency problems, and explain solutions to students.}
     \resumeListEnd
 
   \experience
     {Cal Poly | Data Engineer (Research) | San Luis Obispo, CA}
     {Jun. 2017 - Jun. 2018}
     \beginResumeList
-      \normalItem{Cleaned and curated SAS datasets downloaded from the Panel Study of Income Dynamics, allowing researchers to access data in novel ways.}
-      \normalItem{Automated determination of optimal office hours for professors with a tool written in R using matrix algebra, saving about an hour of work for each professor every quarter.}
-      \normalItem{Created a custom PDF scraping tool to facilitate research in C using the Poppler library, allowing us to include new factors in our regression for a more accurate prediction.}
+      \normalItem{Cleaned and curated SAS datasets downloaded from the Panel Study of Income Dynamics, allowing researchers to access 100+ of GB's of previously unavailable data.}
+      \normalItem{Automated determination of optimal office hours for professors with a tool written in R using matrix algebra, saving 90\% of time spent scheduling each quarter.}
+      \normalItem{Created a custom PDF scraping tool in C using the Poppler library to facilitate research, allowing us to include critical factors that were necessary for our linear regression.}
     \resumeListEnd
 
 \section{EDUCATION}
@@ -105,8 +106,8 @@
 
 \section{PROJECT WORK}
   \project
-    {Home Lab | \href{https://github.com/wodend/cloudflare-ddns}{github.com/wodend/cloudflare-ddns}}
-    {2020}
+    {Home Lab | DevOps Engineer | \href{https://github.com/wodend/cloudflare-ddns}{github.com/wodend/cloudflare-ddns}}
+    {Jun. 2019 - Present}
     {Host infrastructure for personal projects, and learning new technologies.}
     \beginResumeList
       \normalItem{Host dockerized personal GitLab source control and GitLab pages behind HAProxy load balancer.}
@@ -117,8 +118,8 @@
     \resumeListEnd
 
   \project
-    {Pricing Differentials by Location | Research Assistant | \href{https://github.com/wodend/hotel-scraper}{github.com/wodend/hotel-scraper}}
-    {2019}
+    {Differentials by Location | Data Engineer | \href{https://github.com/wodend/hotel-scraper}{github.com/wodend/hotel-scraper}}
+    {Feb. 2019} %- Jun. 2019}
     {Model for pricing differentials by location for online travel sites with global data scraped using cloud resources.}
     \beginResumeList
       \normalItem{Created scraping tools for various travel websites using Beautiful Soup in Python to get price data.}
