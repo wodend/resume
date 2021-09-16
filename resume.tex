@@ -65,11 +65,21 @@
   \section{TECHNICAL SKILLS}
   \beginResumeList
   %\boldItem{Proficient}{Python, NumPy, SciPy, Pandas, multiprocessing, Matplotlib, OpenCV, requests, statsmodels, BeautifulSoup, Jupyter Notebook/Lab, R, Plotly, C/C++, Bash, Linux, Git, GitLab CI/CD, Docker, DigitalOcean, Java, Maven, Tablesaw, Jakarta EE, Selenium, Pandoc, \LaTeX, HTML, SQL, LDAP, PowerShell}
-  \boldItem{Proficient}{Python, NumPy, SciPy, Pandas, multiprocessing, Matplotlib, BeautifulSoup, R, Plotly, C/C++, Bash, Linux, Git, CI/CD, Docker, DigitalOcean, Java, Maven, Jakarta EE, Selenium, Pandoc, \LaTeX, HTML, SQL, LDAP}
-  \boldItem{Exposure}{Django, bqplot, C\#, .NET, CSS, Gradle, LXD, Scala, Lua, Javascript/Typescript, SAS, React, Airflow}
+  \boldItem{Proficient}{Python, NumPy, SciPy, Pandas, multiprocessing, Matplotlib, BeautifulSoup, R, C/C++, Bash, Linux, Git, CI/CD, Docker, DigitalOcean, Java, Maven, Jakarta EE, Selenium, Pandoc, \LaTeX, HTML, SQL, LDAP, Spark, PHP/Hack, Presto, React}
+  \boldItem{Exposure}{Django, bqplot, C\#, .NET, CSS, Gradle, LXD, Scala, Lua, Javascript/Typescript, SAS, Airflow}
   \resumeListEnd
 
   \section{WORK EXPERIENCE}
+  \experience
+    {Facebook | Data Engineer | San Francisco, CA}
+    {Oct. 2020 - Present}
+    \beginResumeList
+      \normalItem{Helped design and implement data pipelines to produce billion-scale training data pool tables to sample from for annotation projects.}
+      \normalItem{Wrote pipelines for taking sophisticated stratified responsible AI samples for annotation at the hundreds-of-millions scale.}
+      \normalItem{Designed React GUIs for facilitating the annotation of computer vision datasets for supervised learning.}
+      \normalItem{Implemented libraries for calculating common computer vision metrics such as AUC and MAP on large-scale datasets.}
+    \resumeListEnd
+
   \experience
     {Deloitte | Data Engineer | San Francisco, CA}
     {Jul. 2019 - Jul. 2020}
@@ -106,27 +116,37 @@
 
 \section{PROJECT WORK}
 
-  \project
-    {Home Lab | DevOps Engineer | \href{https://github.com/wodend/cloudflare-ddns}{github.com/wodend/cloudflare-ddns}}
-    {Jun. 2019 - Present}
-    {Host infrastructure for personal projects, and learning new technologies.}
-    \beginResumeList
-      \normalItem{Hosted dockerized personal GitLab source control and GitLab pages behind HAProxy load balancer.}
-      \normalItem{Automated LetsEncrypt certificate renewal with DNS verification challenge using Cloudflare's API.}
-      \normalItem{Generated static HTML pages with MathJax for LaTeX using Pandoc Markdown.}
-      \normalItem{Managed subnet with DDWRT router using dnsmasq for local DNS, and DNS filtering.}
-      \normalItem{Operated physical Debian and Gentoo Linux infrastructure for hosting dockerized applications.}
-    \resumeListEnd
+  %\project
+  %  {Home Lab | DevOps Engineer | \href{https://github.com/wodend/cloudflare-ddns}{github.com/wodend/cloudflare-ddns}}
+  %  {Jun. 2019 - Present}
+  %  {Host infrastructure for personal projects, and learning new technologies.}
+  %  \beginResumeList
+  %    \normalItem{Hosted dockerized personal GitLab source control and GitLab pages behind HAProxy load balancer.}
+  %    \normalItem{Automated LetsEncrypt certificate renewal with DNS verification challenge using Cloudflare's API.}
+  %    \normalItem{Generated static HTML pages with MathJax for LaTeX using Pandoc Markdown.}
+  %    \normalItem{Managed subnet with DDWRT router using dnsmasq for local DNS, and DNS filtering.}
+  %    \normalItem{Operated physical Debian and Gentoo Linux infrastructure for hosting dockerized applications.}
+  %  \resumeListEnd
 
   \project
-    {Differentials by Location | Data Engineer | \href{https://github.com/wodend/hotel-scraper}{github.com/wodend/hotel-scraper}}
-    {Feb. 2019 - Jun. 2019}
-    {Model price differences by region with data scraped from hotel websites.}
+    {PySimplePlotter | Software Engineer | \href{https://github.com/wodend/pysimpleplotter}{github.com/wodend/pysimpleplotter}}
+    {Apr. 2021 - Present}
+    {Plot output from scientific instruments quickly and easily with a simple GUI.}
     \beginResumeList
-      \normalItem{Created scraping tools for travel websites using Beautiful Soup in Python to get price data on over 300 hotels at once from 3 different travel websites and 8 different regions.}
-      \normalItem{Scheduled multi-threaded execution of scraping at specified intervals with shell scripts deployed on DigitalOcean droplets to comply with rate limits and gather data across time.}
-      \normalItem{Created linear models based on pricing for each region, and used ANOVA analysis to determine statistical significance of differences in pricing based on region.}
+      \normalItem{Implemented file reader to automatically detect, clean, and read various delimited file formats.}
+      \normalItem{Wrote a tool using pandas and matplotlib which allows the user to visualize plots of multiple relationships and export the output.}
+      \normalItem{Designed a GUI interface to matplotlib's API to allow the user to customize the plot.}
     \resumeListEnd
+
+  %\project
+  %  {Differentials by Location | Data Engineer | \href{https://github.com/wodend/hotel-scraper}{github.com/wodend/hotel-scraper}}
+  %  {Feb. 2019 - Jun. 2019}
+  %  {Model price differences by region with data scraped from hotel websites.}
+  %  \beginResumeList
+  %    \normalItem{Created scraping tools for travel websites using Beautiful Soup in Python to get price data on over 300 hotels at once from 3 different travel websites and 8 different regions.}
+  %    \normalItem{Scheduled multi-threaded execution of scraping at specified intervals with shell scripts deployed on DigitalOcean droplets to comply with rate limits and gather data across time.}
+  %    \normalItem{Created linear models based on pricing for each region, and used ANOVA analysis to determine statistical significance of differences in pricing based on region.}
+  %  \resumeListEnd
   %\project
   %  {CPF2CSV | Research Assistant | \href{https://github.com/wodend/cpf2csv}{github.com/wodend/cpf2csv}}
   %  {2018}
