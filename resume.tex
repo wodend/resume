@@ -39,8 +39,8 @@
   \end{tabular*}\vspace{-10pt}
 }
 \newcommand{\social}[3]{
-  \begin{tabular*}{0.95\textwidth}[t]{l@{\extracolsep{\fill}} c@{\extracolsep{\fill}} r}
-    \normalsize{#1} & \normalsize{#2} & \normalsize{#3}
+  \begin{tabular*}{0.8\textwidth}[t]{l@{\extracolsep{\fill}} c@{\extracolsep{\fill}} r}
+    \normalsize{#1} & \normalsize{#2}
   \end{tabular*}
 }
 \newcommand{\project}[3]{
@@ -54,13 +54,14 @@
   \centering\huge\textbf{Weston Odend'hal}
   \vspace*{0.1in}
 
-  \normalsize \textbf{+1-415-539-6833 | \href{mailto:wodend@tuta.io}{wodend@tuta.io} | San Francisco}
+  \normalsize \textbf{+1-415-539-6833 | \href{mailto:wodend@tuta.io}{wodend@tuta.io} | Seattle, WA} \\
+  \normalsize \textbf{\href{https://github.com/wodend/}{github.com/wodend} | \href{https://www.linkedin.com/in/wodend/}{linkedin.com/in/wodend} }
   \vspace*{0.1in}
 
-  \social
-    {\textbf{GitHub:} \href{https://github.com/wodend/}{github.com/wodend}}
-    {\textbf{LinkedIn:} \href{https://www.linkedin.com/in/wodend/}{linkedin.com/in/wodend}}
-    {\textbf{AngelList:} \href{https://angel.co/u/wodend}{angel.co/u/wodend}}
+  % \social
+  %   {\textbf{GitHub:} \href{https://github.com/wodend/}{github.com/wodend}}
+  %   {\textbf{LinkedIn:} \href{https://www.linkedin.com/in/wodend/}{linkedin.com/in/wodend}}
+  %   {\textbf{AngelList:} \href{https://angel.co/u/wodend}{angel.co/u/wodend}}
 
   \section{TECHNICAL SKILLS}
   \beginResumeList
@@ -71,8 +72,18 @@
 
   \section{WORK EXPERIENCE}
   \experience
-    {Facebook | Data Engineer | San Francisco, CA}
-    {Oct. 2020 - Present}
+    {Facebook | Data Engineer | Seattle, WA}
+    {Feb. 2022 - Present}
+    \beginResumeList
+      \normalItem{Automated processing for hundreds of tables and samples with Jupyter Notebook + Python.}
+      \normalItem{Enriched billion-scale datasets with custom transforms using Hack and Python.}
+      \normalItem{Designed pipelines with DAG execution frameworks to ETL big data using SQL (Presto, Spark) on Hive.}
+      \normalItem{Enforced privacy \& security on sensitive data through tagging and automated filtering.}
+    \resumeListEnd
+
+  \experience
+    {Facebook | Data Engineer (Contract) | San Francisco, CA}
+    {Oct. 2020 - Dec. 2021}
     \beginResumeList
       \normalItem{Designed and implemented ETL pipelines to produce billion-scale training data pool tables for research scientists to sample from for annotation projects.}
       \normalItem{Wrote libraries to facilitate the stratified sampling and annotation of data for responsible AI at the hundreds-of-millions scale.}
@@ -82,7 +93,7 @@
     \resumeListEnd
 
   \experience
-    {Deloitte | Data Engineer | San Francisco, CA}
+    {Deloitte | Consultant (Cybersecurity) | San Francisco, CA}
     {Jul. 2019 - Jul. 2020}
     \beginResumeList
       \normalItem{Created data pipeline to aggregate and clean user login data across a distributed environment with PowerShell scripts and LDAP database queries, reducing time spent 50\% and including previously unavailable data.}
@@ -91,22 +102,22 @@
       \normalItem{Generated sanitized test data using IBM Optim to obfuscate Personally Identifying and Protected Health information from the production SQL Server database with over 100,000,000 records for 450,000+ users.}
     \resumeListEnd
 
-  \experience
-    {Cal Poly | Teaching Assistant (Computer Science) | San Luis Obispo, CA}
-    {Sep. 2018 - Jun. 2019}
-    \beginResumeList
-      \normalItem{Led office hours for a new class, helping students work through statistics and machine learning assignments using Pandas, NumPy, statsmodels, and SciKit-Learn for over 60 students.}
-      %\normalItem{Took questions in class on general programming concepts such as data structures, web scraping, computational complexity, and regular expressions.}
-      \normalItem{Troubleshoot issues including Python dependency problems, and explain solutions to students.}
-    \resumeListEnd
+  % \experience
+  %   {Cal Poly | Teaching Assistant (Computer Science) | San Luis Obispo, CA}
+  %   {Sep. 2018 - Jun. 2019}
+  %   \beginResumeList
+  %     \normalItem{Led office hours for a new class, helping students work through statistics and machine learning assignments using Pandas, NumPy, statsmodels, and SciKit-Learn for over 60 students.}
+  %     %\normalItem{Took questions in class on general programming concepts such as data structures, web scraping, computational complexity, and regular expressions.}
+  %     \normalItem{Troubleshoot issues including Python dependency problems, and explain solutions to students.}
+  %   \resumeListEnd
 
   \experience
-    {Cal Poly | Data Engineer (Research) | San Luis Obispo, CA}
+    {Cal Poly | Teaching Assistant (Research) | San Luis Obispo, CA}
     {Jun. 2017 - Jun. 2018}
     \beginResumeList
       \normalItem{Cleaned and curated SAS datasets downloaded from the Panel Study of Income Dynamics, allowing researchers to access 100+ of GB's of previously unavailable data.}
       \normalItem{Automated determination of optimal office hours for professors with a tool written in R using matrix algebra, saving 90\% of time spent scheduling each quarter.}
-      \normalItem{Created a custom PDF scraping tool in C using the Poppler library to facilitate research, allowing us to include critical factors that were necessary for our linear regression.}
+      \normalItem{Created a custom PDF scraping tool in C using the Poppler library to facilitate research, allowing us to include critical factors that were necessary for our model.}
     \resumeListEnd
 
 \section{EDUCATION}
