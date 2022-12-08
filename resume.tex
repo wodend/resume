@@ -65,9 +65,13 @@
 
   \section{TECHNICAL SKILLS}
   \beginResumeList
-  %\boldItem{Proficient}{Python, NumPy, SciPy, Pandas, multiprocessing, Matplotlib, OpenCV, requests, statsmodels, BeautifulSoup, Jupyter Notebook/Lab, R, Plotly, C/C++, Bash, Linux, Git, GitLab CI/CD, Docker, DigitalOcean, Java, Maven, Tablesaw, Jakarta EE, Selenium, Pandoc, \LaTeX, HTML, SQL, LDAP, PowerShell}
-  \boldItem{Proficient}{Spark, Python, Presto, NumPy, SciPy, Pandas, Matplotlib, BeautifulSoup, PHP/Hack, React, R, C/C++, Bash, Linux, Git, CI/CD, Docker, Java, Maven, Jakarta EE, Selenium, Pandoc, \LaTeX, HTML/CSS, LDAP}
-  \boldItem{Exposure}{Django, bqplot, C\#, .NET, CSS, Gradle, LXD, Scala, Lua, Javascript/Typescript, SAS, Airflow}
+  % \boldItem{Proficient}{Python, NumPy, SciPy, Pandas, multiprocessing, Matplotlib, OpenCV, requests, statsmodels, BeautifulSoup, Jupyter Notebook/Lab, R, Plotly, C/C++, Bash, Linux, Git, GitLab CI/CD, Docker, DigitalOcean, Java, Maven, Tablesaw, Jakarta EE, Selenium, Pandoc, \LaTeX, HTML, SQL, LDAP, PowerShell}
+  % \boldItem{Exposure}{Django, bqplot, C\#, .NET, CSS, Gradle, LXD, Scala, Lua, Javascript/Typescript, SAS, Airflow}
+  % \boldItem{Proficient}{Spark, Python, Presto, NumPy, SciPy, Pandas, Matplotlib, BeautifulSoup, PHP/Hack, React, R, C/C++, Bash, Linux, Git, CI/CD, Docker, Java, Maven, Jakarta EE, Selenium, Pandoc, \LaTeX, HTML/CSS, LDAP}
+  % \boldItem{Proficient}{Spark, Python, Presto, NumPy, SciPy, Pandas, Matplotlib, BeautifulSoup, PHP/Hack, React, R, C/C++, Bash, Linux, Git, Docker, Java, Maven, Jakarta EE, Selenium, \LaTeX}
+  \boldItem{Languages}{Hive SQL, Python, Presto, C/C++, PHP/Hack, Rust, Javascript, Java, PowerShell, Scala}
+  \boldItem{Libraries}{React, OpenCV, NumPy, SciPy, Pandas, Matplotlib, requests, BeautifulSoup, Jakarta EE, PyTorch}
+  \boldItem{Tools/Platforms}{Linux, Git, JupyterLab, DigitalOcean, Docker, Buck, Maven, Pandoc, HTML/CSS, \LaTeX}
   \resumeListEnd
 
   \section{WORK EXPERIENCE}
@@ -75,10 +79,10 @@
     {Facebook | Data Engineer | Seattle, WA}
     {Feb. 2022 - Present}
     \beginResumeList
-      \normalItem{Automated processing for hundreds of tables and samples with Jupyter Notebook + Python.}
-      \normalItem{Enriched billion-scale datasets with custom transforms using Hack and Python.}
-      \normalItem{Designed pipelines with DAG execution frameworks to ETL big data using SQL (Presto, Spark) on Hive.}
-      \normalItem{Enforced privacy \& security on sensitive data through tagging and automated filtering.}
+      \normalItem{Optimized ETL pipelines processing billions of records using hourly denormalized scraping techniques, reducing critical table landing time by several hours.}
+      \normalItem{Automated processing for hundreds of tables and samples with Jupyter Notebook + Python for grain prediction and tagging for privacy \& security.}
+      \normalItem{Enriched billion-scale datasets with custom transforms using Hack and Python, making new features available and reducing compute time for large Hive joins by 80\%.}
+      \normalItem{Designed data models and ETL pipelines for core datasets supporting analytics, finance, and regulatory teams for payments data at scale, enabling millions of dollars of incremental revenue through new product launches.}
     \resumeListEnd
 
   \experience
@@ -97,7 +101,7 @@
     {Jul. 2019 - Jul. 2020}
     \beginResumeList
       \normalItem{Created data pipeline to aggregate and clean user login data across a distributed environment with PowerShell scripts and LDAP database queries, reducing time spent 50\% and including previously unavailable data.}
-      \normalItem{Automated analysis of user login data with a Java program using the Tablesaw library to generate daily and weekly login statistics, reducing time spent by 90\%.}
+      % \normalItem{Automated analysis of user login data with a Java program using the Tablesaw library to generate daily and weekly login statistics, reducing time spent by 90\%.}
       \normalItem{Introduced a new process to generate security scan crawls using Selenium, saving the client \$12,000 per month.}
       \normalItem{Generated sanitized test data using IBM Optim to obfuscate Personally Identifying and Protected Health information from the production SQL Server database with over 100,000,000 records for 450,000+ users.}
     \resumeListEnd
@@ -116,17 +120,26 @@
     {Jun. 2017 - Jun. 2018}
     \beginResumeList
       \normalItem{Cleaned and curated SAS datasets downloaded from the Panel Study of Income Dynamics, allowing researchers to access 100+ of GB's of previously unavailable data.}
-      \normalItem{Automated determination of optimal office hours for professors with a tool written in R using matrix algebra, saving 90\% of time spent scheduling each quarter.}
+      % \normalItem{Automated determination of optimal office hours for professors with a tool written in R using matrix algebra, saving 90\% of time spent scheduling each quarter.}
       \normalItem{Created a custom PDF scraping tool in C using the Poppler library to facilitate research, allowing us to include critical factors that were necessary for our model.}
+    \resumeListEnd
+
+\section{PROJECT WORK}
+  \project
+    {PySimplePlotter | Software Engineer | \href{https://github.com/wodend/pysimpleplotter}{github.com/wodend/pysimpleplotter}}
+    {Apr. 2021 - Present}
+    {Plot output from scientific instruments quickly and easily with a simple GUI.}
+    \beginResumeList
+      \normalItem{Implemented file reader to automatically detect, clean, and read various delimited file formats.}
+      \normalItem{Wrote a tool using pandas and matplotlib which allows the user to visualize plots of multiple relationships and export the output.}
+      \normalItem{Designed a GUI interface to matplotlib's API to allow the user to customize the plot.}
     \resumeListEnd
 
 \section{EDUCATION}
   \education
     {B.S. Economics; Minor Computer Science}
-    {California Polytechnic State University}
+    {Cal Poly San Luis Obispo}
     {Jun. 2019}
-
-\section{PROJECT WORK}
 
   %\project
   %  {Home Lab | DevOps Engineer | \href{https://github.com/wodend/cloudflare-ddns}{github.com/wodend/cloudflare-ddns}}
@@ -139,16 +152,6 @@
   %    \normalItem{Managed subnet with DDWRT router using dnsmasq for local DNS, and DNS filtering.}
   %    \normalItem{Operated physical Debian and Gentoo Linux infrastructure for hosting dockerized applications.}
   %  \resumeListEnd
-
-  \project
-    {PySimplePlotter | Software Engineer | \href{https://github.com/wodend/pysimpleplotter}{github.com/wodend/pysimpleplotter}}
-    {Apr. 2021 - Present}
-    {Plot output from scientific instruments quickly and easily with a simple GUI.}
-    \beginResumeList
-      \normalItem{Implemented file reader to automatically detect, clean, and read various delimited file formats.}
-      \normalItem{Wrote a tool using pandas and matplotlib which allows the user to visualize plots of multiple relationships and export the output.}
-      \normalItem{Designed a GUI interface to matplotlib's API to allow the user to customize the plot.}
-    \resumeListEnd
 
   %\project
   %  {Differentials by Location | Data Engineer | \href{https://github.com/wodend/hotel-scraper}{github.com/wodend/hotel-scraper}}
